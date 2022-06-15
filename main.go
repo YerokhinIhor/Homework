@@ -17,10 +17,10 @@ func main(){
 	fmt.Println("Відповідь: ", math.Ceil(((float64(9) * applePrice + float64(8) * pearPrice)) * 100) / 100)
 
 	fmt.Println("2.Скільки груш ми можемо купити?")
-	fmt.Println("Відповідь: ", int(allMoney/pearPrice))
+	fmt.Println("Відповідь: ", math.Floor(allMoney/pearPrice))
 
 	fmt.Println("3.Скільки яблук ми можемо купити?")
-	fmt.Println("Відповідь: ", int(allMoney/applePrice))
+	fmt.Println("Відповідь: ", math.Floor(allMoney/applePrice))
 
 	fmt.Println("4.Чи ми можемо купити 2 груші та 2 яблука?")
 
