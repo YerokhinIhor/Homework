@@ -42,7 +42,6 @@ func main() {
 	
 	var departureStation, arrivalStation, criteria string
 	
-	//	... запит даних від користувача
 	fmt.Println("Enter the station of departure: ")
 	fmt.Scanln(&departureStation)
 	
@@ -143,7 +142,7 @@ func FindTrains(departureStation, arrivalStation, criteria string) (Trains, erro
 		result = result[0:3]
 	}
 	
-	return result, nil // маєте повернути правильні значення
+	return result, nil 
 }
 
 func readJSON() (Trains, error){
