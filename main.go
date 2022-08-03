@@ -70,6 +70,7 @@ func main() {
 
 }
 
+//
 func (t *Train) UnmarshalJSON(data []byte) error {
 	
 	type copyTrain Train
